@@ -44,7 +44,7 @@ jobs:
         mkdir -p /opt/images/
     - name: Build Firmware
       env:
-        TNAME: NETGEAR-BZVR6800
+        TNAME: NETGEAR-BZV (R6800)
         KERNEL: 3.4
       run: |
         cd /opt/rt-n56u/trunk
@@ -125,5 +125,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: always()
       with:
-        name: NETGEAR-BZV
+        name: NETGEAR-BZV (R6800)
         path: /opt/images
